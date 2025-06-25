@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<title>Cà phê Ông Thọ - Online Order</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,700&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 d-flex align-items-center">
+					<p class="mb-0 phone pl-md-2">
+						<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a>
+						<a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
+					</p>
+				</div>
+				<div class="col-md-6 d-flex justify-content-md-end">
+					<div class="social-media mr-4">
+						<p class="mb-0 d-flex">
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+						</p>
+					</div>
+					<div class="reg">
+						<p class="mb-0"><a href="#" class="mr-2">Sign Up</a> <a href="#">Log In</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--nav bar-->
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Cà phê <span>Ông Thọ</span></a>
+			<div class="order-lg-last btn-group">
+				<a href="#" class="btn-cart dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false">
+					<span class="flaticon-shopping-bag"></span>
+					<div class="d-flex justify-content-center align-items-center" id="cart-count">
+						<small>0</small> <!-- Số lượng giỏ hàng sẽ được cập nhật tại đây -->
+					</div>
+				</a>
+
+				<!-- Dropdown menu để hiển thị sản phẩm trong giỏ -->
+				<div class="dropdown-menu dropdown-menu-right p-3" id="cart-dropdown" style="width: 300px; max-height: 700px; overflow-y: auto;">
+					<!-- Sản phẩm sẽ được thêm vào đây bằng JS -->
+				</div>
+
+
+
+				<div class="dropdown-menu dropdown-menu-right">
+
+					<a class="dropdown-item text-center btn-link d-block w-100" href="cart.html">
+						View All
+						<span class="ion-ios-arrow-round-forward"></span>
+					</a>
+				</div>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="index.html" class="nav-link">Trang chủ</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">Về chúng tôi</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown04">
+							<a class="dropdown-item" href="product.html">Sản phẩm</a>
+							<a class="dropdown-item" href="cart.html">Giỏ hàng</a>
+							<a class="dropdown-item" href="checkout.html">Checkout</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<div class="hero-wrap" style="background-image: url('images/coffee-shop-decor.jpg');"
+		data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-center justify-content-center">
+				<div class="col-md-8 ftco-animate d-flex align-items-end">
+					<div class="text w-100 text-center">
+						<h1 class="mb-4">Good <span>Drink</span> for Good <span>Moments</span>.</h1>
+						<p><a href="#" class="btn btn-primary py-2 px-4">Shop Now</a> <a href="#"
+								class="btn btn-white btn-outline-white py-2 px-4">Read more</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="ftco-intro">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-4 d-flex">
+					<div class="intro d-lg-flex w-100 ftco-animate">
+						<div class="icon">
+							<span class="flaticon-support"></span>
+						</div>
+						<div class="text">
+							<h2>Đặt hàng dễ dàng</h2>
+							<p>Chỉ với vài thao tác đơn giản, bạn đã có thể sở hữu ngay những ly đồ uống thơm ngon.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex">
+					<div class="intro color-1 d-lg-flex w-100 ftco-animate">
+						<div class="icon">
+							<span class="flaticon-cashback"></span>
+						</div>
+						<div class="text">
+							<h2>Thoả sức lựa chọn</h2>
+							<p>
+								Từ trà, cà phê truyền thống đến các loại nước ép, sinh tố tươi mát và đồ uống đặc biệt.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex">
+					<div class="intro color-2 d-lg-flex w-100 ftco-animate">
+						<div class="icon">
+							<span class="flaticon-free-delivery"></span>
+						</div>
+						<div class="text">
+							<h2>Ưu đãi Giao Hàng Miễn Phí</h2>
+							"Ưu đãi đặc biệt: Miễn phí giao hàng cho tất cả các đơn hàng có giá trị từ 299.000đ trở
+							lên."
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pb">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center"
+					style="background-image: url(images/person_1.jpg);">
+				</div>
+				<div class="col-md-6 wrap-about pl-md-5 ftco-animate py-5">
+					<div class="heading-section">
+						<span class="subheading">Từ năm 1825 (chúng tôi nghĩ vậy... chắc là vậy)</span>
+
+						<h2 class="mb-4">Cà Phê Ông Thọ</h2>
+						<p>Người ta đồn rằng có một hương vị chưa từng được đặt tên, chủ yếu vì chẳng ai nghĩ ra cái tên
+							nào nghe cho kêu. Nó không bắt đầu từ nông trại, mà từ một con sông bí ẩn tên Nho Quế – nơi
+							hạt cà phê được nuôi bằng sương mù, tiếng chim hót líu lo, và drama của mấy con vịt trời.
+						</p>
+						<p>Chúng tôi từng va phải một “bản sao” – một ly cà phê nhạt như nước ốc và buồn như bài tập
+							nhóm không ai làm. Lúc đó, chúng tôi biết: thế giới cà phê đang khủng hoảng sáng tạo. Những
+							chiếc cốc vô hồn, những công thức lặp đi lặp lại… khiến cà phê mất đi niềm tin vào chính
+							mình.</p>
+						<p>Nhưng không! Chúng tôi đã quay lại con Sông Nho Quế, nơi mọi chuyện bắt
+							đầu. Và từ đó, **Cà phê Ông Thọ** ra đời – không phải là một loại cà phê, mà là một trải nghiệm
+							tâm linh. Một ngụm thôi là nhớ lại... cái gì đó. Có thể là tình cũ, hoặc... deadline quên
+							nộp.</p>
+						<p class="year"> <strong class="number" data-number="200">0</strong> <span>năm kinh nghiệm trong
+								việc... không giống ai</span>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pb">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-4 ">
+					<div class="sort w-100 text-center ftco-animate">
+						<div class="img" style="background-image: url(images/kind-1.jpg);"></div>
+						<h3>Cà phê phin</h3>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 ">
+					<div class="sort w-100 text-center ftco-animate">
+						<div class="img" style="background-image: url(images/kind-2.jpg);"></div>
+						<h3>Cà phê máy</h3>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 ">
+					<div class="sort w-100 text-center ftco-animate">
+						<div class="img" style="background-image: url(images/kind-3.jpg);"></div>
+						<h3>Matcha</h3>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 ">
+					<div class="sort w-100 text-center ftco-animate">
+						<div class="img" style="background-image: url(images/kind-4.jpg);"></div>
+						<h3>Trà hoa quả</h3>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 ">
+					<div class="sort w-100 text-center ftco-animate">
+						<div class="img" style="background-image: url(images/kind-5.jpg);"></div>
+						<h3>Trà sữa</h3>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 ">
+					<div class="sort w-100 text-center ftco-animate">
+						<div class="img" style="background-image: url(images/kind-6.jpg);"></div>
+						<h3>Bánh</h3>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Our Delightful offerings</span>
+					<h2>Tastefully Yours</h2>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Sản phẩm 1 -->
+				<div class="col-md-3 d-flex">
+					<div class="product ftco-animate">
+						<div class="img d-flex align-items-center justify-content-center"
+							style="background-image: url(images/prod-1.jpg);">
+							<div class="desc">
+								<p class="meta-prod d-flex">
+									<a href="#" class="add-to-cart d-flex align-items-center justify-content-center"
+										onclick="addToCart('Cà phê đen', 15000, 'images/prod-1.jpg')">
+										<span class="flaticon-shopping-bag"></span>
+									</a>
+
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-heart"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-visibility"></span></a>
+								</p>
+							</div>
+						</div>
+						<div class="text text-center">
+							<span class="sale">Sale</span>
+							<span class="category">Cà phê phin</span>
+							<h2>Cà phê đen</h2>
+							<p class="mb-0"><span class="price price-sale">25.000đ</span> <span class="price">15.000
+									VNĐ</span></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Sản phẩm 2 -->
+				<div class="col-md-3 d-flex">
+					<div class="product ftco-animate">
+						<div class="img d-flex align-items-center justify-content-center"
+							style="background-image: url(images/prod-2.jpg);">
+							<div class="desc">
+								<p class="meta-prod d-flex">
+									<a href="#" class="add-to-cart d-flex align-items-center justify-content-center"
+										data-name="Cà phê sữa" data-price="20000" data-image="images/prod-2.jpg">
+										<span class="flaticon-shopping-bag"></span>
+									</a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-heart"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-visibility"></span></a>
+								</p>
+							</div>
+						</div>
+						<div class="text text-center">
+							<span class="seller">Best Seller</span>
+							<span class="category">Cà phê phin</span>
+							<h2>Cà phê sữa</h2>
+							<span class="price">20.000 VNĐ</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 d-flex">
+					<div class="product ftco-animate">
+						<div class="img d-flex align-items-center justify-content-center"
+							style="background-image: url(images/prod-3.jpg);">
+							<div class="desc">
+								<p class="meta-prod d-flex">
+									<a href="#" class="add-to-cart d-flex align-items-center justify-content-center"
+										data-name="Matcha Latte" data-price="50000" data-image="images/prod-3.jpg">
+										<span class="flaticon-shopping-bag"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-heart"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-visibility"></span></a>
+								</p>
+							</div>
+						</div>
+						<div class="text text-center">
+							<span class="new">New Arrival</span>
+							<span class="category">Matcha</span>
+							<h2>Matcha Latte</h2>
+							<span class="price">50.000 VNĐ</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 d-flex">
+					<div class="product ftco-animate">
+						<div class="img d-flex align-items-center justify-content-center"
+							style="background-image: url(images/prod-4.jpg);">
+							<div class="desc">
+								<p class="meta-prod d-flex">
+									<a href="#" class="add-to-cart d-flex align-items-center justify-content-center"
+										data-name="Trà đào cam sả" data-price="45000" data-image="images/prod-4.jpg">
+										<span class="flaticon-shopping-bag"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-heart"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-visibility"></span></a>
+								</p>
+							</div>
+						</div>
+						<div class="text text-center">
+							<span class="category">Trà hoa quả</span>
+							<h2>Trà đào cam sả</h2>
+							<span class="price">45.000 VNĐ</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex">
+					<div class="product ftco-animate">
+						<div class="img d-flex align-items-center justify-content-center"
+							style="background-image: url(images/prod-5.jpg);">
+							<div class="desc">
+								<p class="meta-prod d-flex">
+									<a href="#" class="add-to-cart d-flex align-items-center justify-content-center"
+										data-name="Cappuccino" data-price="54000" data-image="images/prod-5.jpg">
+										<span class="flaticon-shopping-bag"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-heart"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-visibility"></span></a>
+								</p>
+							</div>
+						</div>
+						<div class="text text-center">
+							<span class="category">Cà phê máy</span>
+							<h2>Cappuccino</h2>
+							<span class="price">54.000 VNĐ</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 d-flex">
+					<div class="product ftco-animate">
+						<div class="img d-flex align-items-center justify-content-center"
+							style="background-image: url(images/prod-6.jpg);">
+							<div class="desc">
+								<p class="meta-prod d-flex">
+									<a href="#" class="add-to-cart d-flex align-items-center justify-content-center"
+										data-name="Espresso" data-price="50000" data-image="images/prod-6.jpg">
+										<span class="flaticon-shopping-bag"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-heart"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-visibility"></span></a>
+								</p>
+							</div>
+						</div>
+						<div class="text text-center">
+							<span class="category">Cà phê máy</span>
+							<h2>Espresso</h2>
+							<span class="price">50.000 VNĐ</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 d-flex">
+					<div class="product ftco-animate">
+						<div class="img d-flex align-items-center justify-content-center"
+							style="background-image: url(images/prod-7.jpg);">
+							<div class="desc">
+								<p class="meta-prod d-flex">
+									<a href="#" class="add-to-cart d-flex align-items-center justify-content-center"
+										data-name="Trà sữa chân trâu đường đen" data-price="25000"
+										data-image="images/prod-7.jpg">
+										<span class="flaticon-shopping-bag"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-heart"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-visibility"></span></a>
+								</p>
+							</div>
+						</div>
+						<div class="text text-center">
+							<span class="category">Trà sữa</span>
+							<h2>Trà sữa trân châu đường đen</h2>
+							<span class="price">25.000 VNĐ</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 d-flex">
+					<div class="product ftco-animate">
+						<div class="img d-flex align-items-center justify-content-center"
+							style="background-image: url(images/prod-8.jpg);">
+							<div class="desc">
+								<p class="meta-prod d-flex">
+									<a href="#" class="add-to-cart d-flex align-items-center justify-content-center"
+										data-name="Trà dưa hấu" data-price="25000" data-image="images/prod-8.jpg">
+										<span class="flaticon-shopping-bag"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-heart"></span></a>
+									<a href="#" class="d-flex align-items-center justify-content-center"><span
+											class="flaticon-visibility"></span></a>
+								</p>
+							</div>
+						</div>
+						<div class="text text-center">
+							<span class="category">Trà hoa quả</span>
+							<h2>Trà dưa hấu</h2>
+							<span class="price">25.000 VNĐ</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<a href="product.html" class="btn btn-primary d-block">View All Products <span
+							class="fa fa-long-arrow-right"></span></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section testimony-section img" style="background-image: url(images/bg_4.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+					<span class="subheading">Testimonial</span>
+					<h2 class="mb-3">Happy Clients</h2>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel ftco-owl">
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="fa fa-quote-left"></div>
+								<div class="text">
+									<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+										ipsum repellat officiis, quis, autem blanditiis id nesciunt optio, repellendus
+										vitae voluptate error eaque veniam at accusantium nisi totam sequi sed.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Đức Thọ</p>
+											<span class="position">Marketing Manager</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="fa fa-quote-left"></div>
+								<div class="text">
+									<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+										ipsum repellat officiis, quis, autem blanditiis id nesciunt optio, repellendus
+										vitae voluptate error eaque veniam at accusantium nisi totam sequi sed.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Hữu Vinh</p>
+											<span class="position">Marketing Manager</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="fa fa-quote-left"></div>
+								<div class="text">
+									<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+										ipsum repellat officiis, quis, autem blanditiis id nesciunt optio, repellendus
+										vitae voluptate error eaque veniam at accusantium nisi totam sequi sed.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Roger Scott</p>
+											<span class="position">Marketing Manager</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="fa fa-quote-left"></div>
+								<div class="text">
+									<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+										ipsum repellat officiis, quis, autem blanditiis id nesciunt optio, repellendus
+										vitae voluptate error eaque veniam at accusantium nisi totam sequi sed.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_4.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Roger Scott</p>
+											<span class="position">Marketing Manager</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="fa fa-quote-left"></div>
+								<div class="text">
+									<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+										ipsum repellat officiis, quis, autem blanditiis id nesciunt optio, repellendus
+										vitae voluptate error eaque veniam at accusantium nisi totam sequi sed.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Roger Scott</p>
+											<span class="position">Marketing Manager</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Blog</span>
+					<h2>Recent Blog</h2>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-lg-6 d-flex align-items-stretch ftco-animate" href="blog-single.html">
+					<div class="blog-entry d-flex">
+						<a href="blog-single.html" class="block-20 img"
+							style="background-image: url('images/prod-6.jpg');">
+						</a>
+						<div class="text p-4 bg-light">
+							<div class="meta">
+								<p><span class="fa fa-calendar"></span> 23 April 2020</p>
+							</div>
+							<h3 class="heading mb-3"><a href="blog-single.html">Cách để có một ly Espresso ngon</a></h3>
+							<p>Công thức pha Espresso có vẻ đơn giản nhưng đòi hỏi sự chính xác và chú ý đến từng chi
+								tiết để có được một tách espresso chất lượng. Dưới đây là hướng dẫn cơ bản và các yếu tố
+								quan trọng:
+							</p>
+							<a href="blog-single.html" class="btn-custom">Continue <span class="fa fa-long-arrow-right"></span></a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex align-items-stretch ftco-animate">
+					<div class="blog-entry d-flex">
+						<a href="blog-single.html" class="block-20 img"
+							style="background-image: url('images/bg_4.jpg');">
+						</a>
+						<div class="text p-4 bg-light">
+							<div class="meta">
+								<p><span class="fa fa-calendar"></span> 23 April 2020</p>
+							</div>
+							<h3 class="heading mb-3"><a href="blog-single.html">Lịch sử của hạt cà phê Việt Nam</a></h3>
+							<p>Câu chuyện về hạt cà phê Việt Nam là một hành trình đầy thăng trầm, đan xen giữa dấu ấn
+								của thời kỳ thuộc địa và khát vọng vươn lên của một quốc gia nông nghiệp. Từ những mầm
+								cây Arabica ...
+							</p>
+							<a href="blog-single.html" class="btn-custom">Continue <span class="fa fa-long-arrow-right"></span></a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex align-items-stretch ftco-animate">
+					<div class="blog-entry d-flex">
+						<a href="blog-single.html" class="block-20 img"
+							style="background-image: url('images/image_3.jpg');">
+						</a>
+						<div class="text p-4 bg-light">
+							<div class="meta">
+								<p><span class="fa fa-calendar"></span> 23 April 2020</p>
+							</div>
+							<h3 class="heading mb-3"><a href="blog-single.html">The Recipe from a Winemaker’s Restaurent</a></h3>
+							<p>A small river named Duden flows by their place and supplies it with the necessary
+								regelialia.</p>
+							<a href="blog-single.html" class="btn-custom">Continue <span class="fa fa-long-arrow-right"></span></a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex align-items-stretch ftco-animate">
+					<div class="blog-entry d-flex">
+						<a href="blog-single.html" class="block-20 img"
+							style="background-image: url('images/image_4.jpg');">
+						</a>
+						<div class="text p-4 bg-light">
+							<div class="meta">
+								<p><span class="fa fa-calendar"></span> 23 April 2020</p>
+							</div>
+							<h3 class="heading mb-3"><a href="blog-single.html">The Recipe from a Winemaker’s Restaurent</a></h3>
+							<p>A small river named Duden flows by their place and supplies it with the necessary
+								regelialia.</p>
+							<a href="blog-single.html" class="btn-custom">Continue <span class="fa fa-long-arrow-right"></span></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="ftco-footer">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-sm-12 col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2 logo"><a href="#">Cà phê <span>Ông Thọ</span></a></h2>
+						<p>Far far away, behind the word mountains, far from the countries.</p>
+						<ul class="ftco-footer-social list-unstyled mt-2">
+							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">My Accounts</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Account</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Register</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Log In</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Order</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">Information</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About us</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Catalog</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact us</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Quick Link</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>New User</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Help Center</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Report Spam</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Faq's</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon fa fa-map marker"></span><span class="text">125 Phùng Hưng, Hoàn
+										Kiếm, Hà Nội, Việt Nam</span></li>
+								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929
+											210</span></a></li>
+								<li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span
+											class="text">info@yourdomain.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid px-0 py-5 bg-black">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<p class="mb-0" style="color: rgba(255,255,255,.5);">
+							Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script> All rights reserved | This
+							template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a
+								href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/index-cart.js"></script>
+</body>
+
+</html>
